@@ -1,4 +1,4 @@
-import {Cake} 
+import {Cake} from 'lucide-react'
 
 export const Header = () => {
   return (
