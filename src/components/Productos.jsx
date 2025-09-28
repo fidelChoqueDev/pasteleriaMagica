@@ -40,6 +40,11 @@ const productos = [
 
 export const Productos = () => {
   return (
-    <div>Productos</div>
+    <section id='productos' className='py-16 px-6 bg-white text-center'>
+      <h3 className='text-3xl font-bold text-pink-700 mb-8'>Nuestros productos</h3>
+      <div>
+        Aqui biene el mapeo de productos
+      </div>
+    </section>
   )
 }

@@ -1,6 +1,7 @@
 import './App.css'
 import { Header } from './components/Header'
 import { Hero } from './components/Hero'
+import { Productos } from './components/Productos'
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <div className='min-h-dvh bg-gradient-to-br from-pink-100 to-pink-300 text-pink-900'>
         <Header />
         <Hero />
+        <Productos /> 
       </div>
     </>
   )
