@@ -42,14 +42,14 @@ export const Productos = () => {
   return (
     <section id='productos' className='py-16 px-6 bg-white text-center'>
       <h3 className='text-3xl font-bold text-pink-700 mb-8'>Nuestros productos</h3>
-      <div>
+      <div className='grid md:grid-cols-3 gap-6 max-w-6xl mx-auto'>
         Aqui biene el mapeo de productos
         {productos.map(producto => (
-          <div key={producto.id} className='border'>
+          <div key={producto.id} className='bg-pink-50 p-6 rounded-2x1 shadow-md hover:scale-105 transform transition duration-300'>
             <img src= {producto.imagen} alt={producto.nombre} />
-            <h4>{producto.nombre}</h4>
-            <p>{producto.descripcion}</p>
-            <p>€{producto.precio.toFixed(2)}</p>
+            <h4 className='text-x1 font-bold mb-2'>{producto.nombre}</h4>
+            <p className='text-sm text-gray-600 mb-2'>{producto.descripcion}</p>
+            <p className='font-semibold text-pink-700'>€{producto.precio.toFixed(2)}</p>
           </div>
         ))}
       </div>
