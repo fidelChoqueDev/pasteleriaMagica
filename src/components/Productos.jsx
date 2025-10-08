@@ -44,6 +44,14 @@ export const Productos = () => {
       <h3 className='text-3xl font-bold text-pink-700 mb-8'>Nuestros productos</h3>
       <div>
         Aqui biene el mapeo de productos
+        {productos.map(producto => (
+          <div key={producto.id} className='border'>
+            <img src= {producto.imagen} alt={producto.nombre} />
+            <h4>{producto.nombre}</h4>
+            <p>{producto.descripcion}</p>
+            <p>€{producto.precio.toFixed(2)}</p>
+          </div>
+        ))}
       </div>
     </section>
   )
