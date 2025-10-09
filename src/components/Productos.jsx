@@ -1,5 +1,4 @@
 import React from 'react'
-import imagen1 from '../assets/pie-2980431_640.jpg'
 
 const productos = [
   {
