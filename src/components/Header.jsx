@@ -1,5 +1,6 @@
 import React from 'react'
 import { GiCupcake } from 'react-icons/gi';
+import { NavbarLinks } from '../utils/Ruetes';
 
 export const Header = () => {
   return (
@@ -9,11 +10,19 @@ export const Header = () => {
             <h1 className='text-2xl font-bold'>Pasteleria Magica</h1>
         </div>
         <nav className="bg-amber-200 hidden md:flex gap-4 text-pink-700 font-medium">
-          <a href="#hero" className='hover:underline'>Inicio</a>
-          <a href="#productos" className='hover:underline'>Productos</a>
-          <a href="#galeria" className='hover:underline'>Galeria</a>
-          <a href="#contacto" className="hover:underline">Contacto</a>
+          <ul>
+            {NavbarLinks.map((link) => (
+              <li key={link.id} className="inline mr-6">
+                <a href={link.href} className="hover:underline">{link.name}</a>
+              </li>
+            ))}
+          </ul>
         </nav>
+        <div className='nav_togle'>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
     </div>
   )
 }
