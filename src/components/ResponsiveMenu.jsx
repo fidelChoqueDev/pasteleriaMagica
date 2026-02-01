@@ -30,6 +30,4 @@ export const ResponsiveMenu = ({isMenuOpen, NavbarLinks}) => {
         )}
       </AnimatePresence>
     );
-        {/*<div> Enlaces de navegación móvil 
-            </div>*/}
 };

@@ -1,5 +1,7 @@
 import './App.css'
 import AboutUs from './components/AboutUs'
+import { Contacto } from './components/Contacto'
+import { Galeria } from './components/Galeria'
 import { Header } from './components/Header'
 import { Hero } from './components/Hero'
 import { Productos } from './components/Productos'
@@ -11,7 +13,12 @@ function App() {
         <Header />
         <Hero />
         <Productos /> 
+        <Galeria />
         <AboutUs />
+        <Contacto />
+        <footer className='py-6 text-center bg-pink-700 text-white'>
+          <p>&copy; 2024 Pasteleria Magica. Todos los derechos reservados.</p>
+        </footer>
       </div>
     </>
   )
